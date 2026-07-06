@@ -1,12 +1,15 @@
 # tenzir
 
-This repository reserves the `tenzir` package name on npm for Tenzir.
+This repository reserves npm package names for Tenzir:
 
-The package intentionally has no public API. It exists to keep the unscoped
-`tenzir` npm name under Tenzir's control and to prevent confusing unofficial
-packages from occupying it.
+- `tenzir`
+- `@tenzir/tenzir`
 
-Don't use this package to install Tenzir.
+The packages intentionally have no public API. They exist to keep the unscoped
+`tenzir` npm name and the `@tenzir` npm namespace under Tenzir's control, and to
+prevent confusing unofficial packages from occupying them.
+
+Don't use these packages to install Tenzir.
 
 ## Install Tenzir
 
@@ -21,19 +24,21 @@ Useful links:
 
 ## Package behavior
 
-Importing this package throws an error that points users to the documentation.
-This makes accidental runtime use visible while keeping the package inert during
+Importing either package throws an error that points users to the documentation.
+This makes accidental runtime use visible while keeping the packages inert during
 installation.
 
 ## Publish
 
-Publish this package only from an official Tenzir npm account.
+Publish these packages only from an official Tenzir npm account.
 
 ```bash
 npm publish --access public
+cd packages/tenzir
+npm publish --access public
 ```
 
-Before publishing, verify the package contents:
+Before publishing, verify the package contents from the repository root:
 
 ```bash
 npm test
@@ -42,8 +47,8 @@ npm run pack:check
 
 ## Security
 
-Report suspected npm account compromise, unexpected releases, or package-name
-abuse to [security@tenzir.com](mailto:security@tenzir.com).
+Report suspected npm account compromise, unexpected releases, namespace abuse, or
+package-name abuse to [security@tenzir.com](mailto:security@tenzir.com).
 
 ## License
 

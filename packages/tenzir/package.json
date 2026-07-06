@@ -1,7 +1,7 @@
 {
-  "name": "tenzir",
+  "name": "@tenzir/tenzir",
   "version": "0.0.0",
-  "description": "Reserved npm package name for Tenzir.",
+  "description": "Reserved scoped npm package name for Tenzir.",
   "type": "module",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -18,8 +18,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node --test test/*.test.js packages/tenzir/test/*.test.js",
-    "pack:check": "npm pack --dry-run && npm --prefix packages/tenzir run pack:check"
+    "test": "node --test test/*.test.js",
+    "pack:check": "npm pack --dry-run"
   },
   "keywords": [
     "tenzir",
@@ -30,7 +30,8 @@
   "homepage": "https://tenzir.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tenzir/npm-tenzir.git"
+    "url": "git+https://github.com/tenzir/npm-tenzir.git",
+    "directory": "packages/tenzir"
   },
   "bugs": {
     "url": "https://github.com/tenzir/npm-tenzir/issues"
