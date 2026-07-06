@@ -1,0 +1,44 @@
+{
+  "name": "tenzir",
+  "version": "0.0.0",
+  "description": "Reserved npm package name for Tenzir.",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "tenzir",
+    "reserved"
+  ],
+  "author": "Tenzir",
+  "license": "Apache-2.0",
+  "homepage": "https://tenzir.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenzir/npm-tenzir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tenzir/npm-tenzir/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
